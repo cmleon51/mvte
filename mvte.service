@@ -1,0 +1,10 @@
+[Unit]
+Description=Program to move files around automatically using "glob" as matching function
+After=default.target
+
+[Service]
+ExecStart=python3 $HOME/.local/bin/mvte.py
+Type=simple
+
+[Install]
+WantedBy=default.target
